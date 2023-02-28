@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+i,svg{
+    pointer-events: none;
+}
+h1{
+    font-size: 1.5rem;
+    color: white;
+}
+.kick-pad,.stickDrum-pad,.openHat-pad,.midTom-pad,.percussion-pad,.hey-pad,.stabs-pad{
+    width: 2rem;
+    height: 2rem;
+    box-shadow: 0.5px 0.5px 2px rgba(249, 249, 249, 0.4);
+    background-color: rgb(41,41,43);
+    margin: 0.3rem 0.3rem;
+    cursor: pointer;
+}
+.kick-pad:hover{
+    background: rgb(13,199,91);
+}
+.stickDrum-pad:hover{
+    background: rgb(255,5,74);
+}
+.openHat-pad:hover{
+    background: rgb(245,185,22);
+}
+.midTom-pad:hover{
+    background-color: rgb(26,203,247);
+}
+.percussion-pad:hover{
+    background-color: rgb(128,86,245);
+}
+.hey-pad:hover{
+    background-color: rgb(255,116,182);
+}
+.stabs-pad:hover{
+    background-color: rgb(198,25,77);
+}
+.kick-pad.active{
+    background: rgb(13,199,91);
+}
+.stickDrum-pad.active{
+    background: rgb(255,5,74);
+}
+.openHat-pad.active{
+    background: rgb(245,185,22);
+}
+.midTom-pad.active{
+    background-color: rgb(26,203,247);
+}
+.percussion-pad.active{
+    background-color: rgb(128,86,245);
+}
+.hey-pad.active{
+    background-color: rgb(255,116,182);
+}
+.stabs-pad.active{
+    background-color: rgb(198,25,77);
+}
+.sequencer{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18,18,20);
+}
+.kick-track,.stickDrum-track,.openHat-track,.midTom-track,.percussion-track,.hey-track,.stabs-track{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 0rem;
+}
+.kick,.stickDrum,.openHat,.midTom,.percussion,.hey,.stabs{
+    display: flex;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin: 0rem 2rem;
+}
+.controls button{
+    width: 2rem;
+    height: 2rem;
+    /* padding: 1rem; */
+    border: none;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    /* font-size: 1rem; */
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.controls div{
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 2rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    background-color: rgb(42,42,44);
+}
+.pad{
+    transition: all 0.5s ease;
+}
+
+.play{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background: rgb(88, 88, 88); 
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-top: 3rem;
+    margin-right: 4.1rem;
+}
+select{
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.mute.active{
+    background-color: gray;
+}
+
+.tempo{
+    margin: 3rem;
+    width: 30%;
+}
+.tempo-slider{
+    padding: 0.2rem;
+    --webkit-appearance: none;
+    margin: 1rem 0rem;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 1rem;
+    background: rgb(88, 88, 88);
+}
+.tempo p {
+    font-size: 1.5rem;
+    margin: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.tempClass{
+    background-color: red;
+    background: red;
+    color: red;
+}
+
+@keyframes playTrack {
+    from{
+        transform: scale(1);
+        box-shadow: 0.5px 0.5px 2px rgba(249, 249, 249, 0.4);
+    }
+    to{
+        transform: scale(1.2);
+        box-shadow: 0.4px 0.4px 0px rgba(249, 249, 249, 0.7);
+    }
+}
+@keyframes playTrackTemp {
+    from{
+        transform: scale(1);
+        box-shadow: 0.5px 0.5px 2px rgba(249, 249, 249, 0.4);
+    }
+    to{
+        transform: scale(1.2);
+        background-color: white;
+    }
+}

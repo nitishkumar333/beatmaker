@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatMaker</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="sequencer">
+        <div class="kick-track">
+            <div class="controls">
+                <h1>KickDrum</h1>
+                <div>
+                    <i class="fa-solid fa-drum-steelpan"></i>
+                </div>
+                <button data-track="0" class="mute kick-volume">
+                    <i class="fa-solid fa-volume-high"></i>
+                </button>
+            </div>
+            <div class="kick">
+                <div class="pad kick-pad b0"></div>
+                <div class="pad kick-pad b1"></div>
+                <div class="pad kick-pad b2"></div>
+                <div class="pad kick-pad b3"></div>
+                <div class="pad kick-pad b4"></div>
+                <div class="pad kick-pad b5"></div>
+                <div class="pad kick-pad b6"></div>
+                <div class="pad kick-pad b7"></div>
+                <div class="pad kick-pad b8"></div>
+                <div class="pad kick-pad b9"></div>
+                <div class="pad kick-pad b10"></div>
+                <div class="pad kick-pad b11"></div>
+                <div class="pad kick-pad b12"></div>
+                <div class="pad kick-pad b13"></div>
+                <div class="pad kick-pad b14"></div>
+                <div class="pad kick-pad b15"></div>
+                <div class="pad kick-pad b16"></div>
+                <div class="pad kick-pad b17"></div>
+                <div class="pad kick-pad b18"></div>
+                <div class="pad kick-pad b19"></div>
+                <div class="pad kick-pad b20"></div>
+                <div class="pad kick-pad b21"></div>
+                <div class="pad kick-pad b22"></div>
+                <div class="pad kick-pad b23"></div>
+                <div class="pad kick-pad b24"></div>
+                <div class="pad kick-pad b25"></div>
+                <div class="pad kick-pad b26"></div>
+                <div class="pad kick-pad b27"></div>
+                <div class="pad kick-pad b28"></div>
+                <div class="pad kick-pad b29"></div>
+                <div class="pad kick-pad b30"></div>
+                <div class="pad kick-pad b31"></div>
+            </div>
+        </div>
+        <div class="stickDrum-track">
+            <div class="controls">
+                <h1>StickDrum</h1>
+                <div>
+                    <i class="fa-solid fa-drum"></i>
+                </div>
+                <button data-track="1" class="mute stickDrum-volume">
+                    <i class="fas fa-volume-high"></i>
+                </button>
+            </div>
+            <div class="stickDrum">
+                <div class="pad stickDrum-pad b0"></div>
+                <div class="pad stickDrum-pad b1"></div>
+                <div class="pad stickDrum-pad b2"></div>
+                <div class="pad stickDrum-pad b3"></div>
+                <div class="pad stickDrum-pad b4"></div>
+                <div class="pad stickDrum-pad b5"></div>
+                <div class="pad stickDrum-pad b6"></div>
+                <div class="pad stickDrum-pad b7"></div>
+                <div class="pad stickDrum-pad b8"></div>
+                <div class="pad stickDrum-pad b9"></div>
+                <div class="pad stickDrum-pad b10"></div>
+                <div class="pad stickDrum-pad b11"></div>
+                <div class="pad stickDrum-pad b12"></div>
+                <div class="pad stickDrum-pad b13"></div>
+                <div class="pad stickDrum-pad b14"></div>
+                <div class="pad stickDrum-pad b15"></div>
+                <div class="pad stickDrum-pad b16"></div>
+                <div class="pad stickDrum-pad b17"></div>
+                <div class="pad stickDrum-pad b18"></div>
+                <div class="pad stickDrum-pad b19"></div>
+                <div class="pad stickDrum-pad b20"></div>
+                <div class="pad stickDrum-pad b21"></div>
+                <div class="pad stickDrum-pad b22"></div>
+                <div class="pad stickDrum-pad b23"></div>
+                <div class="pad stickDrum-pad b24"></div>
+                <div class="pad stickDrum-pad b25"></div>
+                <div class="pad stickDrum-pad b26"></div>
+                <div class="pad stickDrum-pad b27"></div>
+                <div class="pad stickDrum-pad b28"></div>
+                <div class="pad stickDrum-pad b29"></div>
+                <div class="pad stickDrum-pad b30"></div>
+                <div class="pad stickDrum-pad b31"></div>
+            </div>
+        </div>
+        <div class="openHat-track">
+            <div class="controls">
+                <h1>Hi-Hat</h1>
+                <div>
+                    <i class="fa-solid fa-compact-disc"></i>
+                </div>
+                <button data-track="2" class="mute openHat-volume">
+                    <i class="fas fa-volume-high"></i>
+                </button>
+                </select>
+            </div>
+            <div class="openHat">
+                <div class="pad openHat-pad b0"></div>
+                <div class="pad openHat-pad b1"></div>
+                <div class="pad openHat-pad b2"></div>
+                <div class="pad openHat-pad b3"></div>
+                <div class="pad openHat-pad b4"></div>
+                <div class="pad openHat-pad b5"></div>
+                <div class="pad openHat-pad b6"></div>
+                <div class="pad openHat-pad b7"></div>
+                <div class="pad openHat-pad b8"></div>
+                <div class="pad openHat-pad b9"></div>
+                <div class="pad openHat-pad b10"></div>
+                <div class="pad openHat-pad b11"></div>
+                <div class="pad openHat-pad b12"></div>
+                <div class="pad openHat-pad b13"></div>
+                <div class="pad openHat-pad b14"></div>
+                <div class="pad openHat-pad b15"></div>
+                <div class="pad openHat-pad b16"></div>
+                <div class="pad openHat-pad b17"></div>
+                <div class="pad openHat-pad b18"></div>
+                <div class="pad openHat-pad b19"></div>
+                <div class="pad openHat-pad b20"></div>
+                <div class="pad openHat-pad b21"></div>
+                <div class="pad openHat-pad b22"></div>
+                <div class="pad openHat-pad b23"></div>
+                <div class="pad openHat-pad b24"></div>
+                <div class="pad openHat-pad b25"></div>
+                <div class="pad openHat-pad b26"></div>
+                <div class="pad openHat-pad b27"></div>
+                <div class="pad openHat-pad b28"></div>
+                <div class="pad openHat-pad b29"></div>
+                <div class="pad openHat-pad b30"></div>
+                <div class="pad openHat-pad b31"></div>
+                
+            </div>
+        </div>
+        <div class="midTom-track">
+            <div class="controls">
+                <h1>Drum</h1>
+                <div>
+                    <i class="fa-solid fa-drum-steelpan"></i>
+                </div>
+                <button data-track="3" class="mute midTom-volume">
+                    <i class="fas fa-volume-high"></i>
+                </button>
+                </select>
+            </div>
+            <div class="midTom">
+                <div class="pad midTom-pad b0"></div>
+                <div class="pad midTom-pad b1"></div>
+                <div class="pad midTom-pad b2"></div>
+                <div class="pad midTom-pad b3"></div>
+                <div class="pad midTom-pad b4"></div>
+                <div class="pad midTom-pad b5"></div>
+                <div class="pad midTom-pad b6"></div>
+                <div class="pad midTom-pad b7"></div>
+                <div class="pad midTom-pad b8"></div>
+                <div class="pad midTom-pad b9"></div>
+                <div class="pad midTom-pad b10"></div>
+                <div class="pad midTom-pad b11"></div>
+                <div class="pad midTom-pad b12"></div>
+                <div class="pad midTom-pad b13"></div>
+                <div class="pad midTom-pad b14"></div>
+                <div class="pad midTom-pad b15"></div>
+                <div class="pad midTom-pad b16"></div>
+                <div class="pad midTom-pad b17"></div>
+                <div class="pad midTom-pad b18"></div>
+                <div class="pad midTom-pad b19"></div>
+                <div class="pad midTom-pad b20"></div>
+                <div class="pad midTom-pad b21"></div>
+                <div class="pad midTom-pad b22"></div>
+                <div class="pad midTom-pad b23"></div>
+                <div class="pad midTom-pad b24"></div>
+                <div class="pad midTom-pad b25"></div>
+                <div class="pad midTom-pad b26"></div>
+                <div class="pad midTom-pad b27"></div>
+                <div class="pad midTom-pad b28"></div>
+                <div class="pad midTom-pad b29"></div>
+                <div class="pad midTom-pad b30"></div>
+                <div class="pad midTom-pad b31"></div>
+            </div>
+        </div>
+        <div class="percussion-track">
+            <div class="controls">
+                <h1>Percussion</h1>
+                <div>
+                    <i class="fa-solid fa-microphone-lines"></i>
+                </div>
+                <button data-track="3" class="mute percussion-volume">
+                    <i class="fas fa-volume-high"></i>
+                </button>
+                </select>
+            </div>
+            <div class="percussion">
+                <div class="pad percussion-pad b0"></div>
+                <div class="pad percussion-pad b1"></div>
+                <div class="pad percussion-pad b2"></div>
+                <div class="pad percussion-pad b3"></div>
+                <div class="pad percussion-pad b4"></div>
+                <div class="pad percussion-pad b5"></div>
+                <div class="pad percussion-pad b6"></div>
+                <div class="pad percussion-pad b7"></div>
+                <div class="pad percussion-pad b8"></div>
+                <div class="pad percussion-pad b9"></div>
+                <div class="pad percussion-pad b10"></div>
+                <div class="pad percussion-pad b11"></div>
+                <div class="pad percussion-pad b12"></div>
+                <div class="pad percussion-pad b13"></div>
+                <div class="pad percussion-pad b14"></div>
+                <div class="pad percussion-pad b15"></div>
+                <div class="pad percussion-pad b16"></div>
+                <div class="pad percussion-pad b17"></div>
+                <div class="pad percussion-pad b18"></div>
+                <div class="pad percussion-pad b19"></div>
+                <div class="pad percussion-pad b20"></div>
+                <div class="pad percussion-pad b21"></div>
+                <div class="pad percussion-pad b22"></div>
+                <div class="pad percussion-pad b23"></div>
+                <div class="pad percussion-pad b24"></div>
+                <div class="pad percussion-pad b25"></div>
+                <div class="pad percussion-pad b26"></div>
+                <div class="pad percussion-pad b27"></div>
+                <div class="pad percussion-pad b28"></div>
+                <div class="pad percussion-pad b29"></div>
+                <div class="pad percussion-pad b30"></div>
+                <div class="pad percussion-pad b31"></div>
+            </div>
+        </div>
+        <div class="hey-track">
+            <div class="controls">
+                <h1>Pop</h1>
+                <div>
+                    <i class="fa-solid fa-record-vinyl"></i>
+                </div>
+                <button data-track="3" class="mute hey-volume">
+                    <i class="fas fa-volume-high"></i>
+                </button>
+                </select>
+            </div>
+            <div class="hey">
+                <div class="pad hey-pad b0"></div>
+                <div class="pad hey-pad b1"></div>
+                <div class="pad hey-pad b2"></div>
+                <div class="pad hey-pad b3"></div>
+                <div class="pad hey-pad b4"></div>
+                <div class="pad hey-pad b5"></div>
+                <div class="pad hey-pad b6"></div>
+                <div class="pad hey-pad b7"></div>
+                <div class="pad hey-pad b8"></div>
+                <div class="pad hey-pad b9"></div>
+                <div class="pad hey-pad b10"></div>
+                <div class="pad hey-pad b11"></div>
+                <div class="pad hey-pad b12"></div>
+                <div class="pad hey-pad b13"></div>
+                <div class="pad hey-pad b14"></div>
+                <div class="pad hey-pad b15"></div>
+                <div class="pad hey-pad b16"></div>
+                <div class="pad hey-pad b17"></div>
+                <div class="pad hey-pad b18"></div>
+                <div class="pad hey-pad b19"></div>
+                <div class="pad hey-pad b20"></div>
+                <div class="pad hey-pad b21"></div>
+                <div class="pad hey-pad b22"></div>
+                <div class="pad hey-pad b23"></div>
+                <div class="pad hey-pad b24"></div>
+                <div class="pad hey-pad b25"></div>
+                <div class="pad hey-pad b26"></div>
+                <div class="pad hey-pad b27"></div>
+                <div class="pad hey-pad b28"></div>
+                <div class="pad hey-pad b29"></div>
+                <div class="pad hey-pad b30"></div>
+                <div class="pad hey-pad b31"></div>
+            </div>
+        </div>
+        <div class="stabs-track">
+            <div class="controls">
+                <h1>Piano</h1>
+                <div>
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+                <button data-track="3" class="mute stabs-volume">
+                    <i class="fas fa-volume-high"></i>
+                </button>
+                </select>
+            </div>
+            <div class="stabs">
+                <div class="pad stabs-pad b0"></div>
+                <div class="pad stabs-pad b1"></div>
+                <div class="pad stabs-pad b2"></div>
+                <div class="pad stabs-pad b3"></div>
+                <div class="pad stabs-pad b4"></div>
+                <div class="pad stabs-pad b5"></div>
+                <div class="pad stabs-pad b6"></div>
+                <div class="pad stabs-pad b7"></div>
+                <div class="pad stabs-pad b8"></div>
+                <div class="pad stabs-pad b9"></div>
+                <div class="pad stabs-pad b10"></div>
+                <div class="pad stabs-pad b11"></div>
+                <div class="pad stabs-pad b12"></div>
+                <div class="pad stabs-pad b13"></div>
+                <div class="pad stabs-pad b14"></div>
+                <div class="pad stabs-pad b15"></div>
+                <div class="pad stabs-pad b16"></div>
+                <div class="pad stabs-pad b17"></div>
+                <div class="pad stabs-pad b18"></div>
+                <div class="pad stabs-pad b19"></div>
+                <div class="pad stabs-pad b20"></div>
+                <div class="pad stabs-pad b21"></div>
+                <div class="pad stabs-pad b22"></div>
+                <div class="pad stabs-pad b23"></div>
+                <div class="pad stabs-pad b24"></div>
+                <div class="pad stabs-pad b25"></div>
+                <div class="pad stabs-pad b26"></div>
+                <div class="pad stabs-pad b27"></div>
+                <div class="pad stabs-pad b28"></div>
+                <div class="pad stabs-pad b29"></div>
+                <div class="pad stabs-pad b30"></div>
+                <div class="pad stabs-pad b31"></div>
+            </div>
+        </div>
+        <button class="play">Play</button>
+        <div class="tempo">
+            <input type="range" class="tempo-slider" max="600" min="20" value="250">
+            <p>Speed: <span class="temp-nr">250</span></p>
+        </div>
+    </div>
+    <audio class="kick-sound" src="./sounds/newSounds/kickDrum.wav"></audio>
+    <audio class="stickDrum-sound" src="./sounds/newSounds/stickDrum.wav"></audio>
+    <audio class="openHat-sound" src="./sounds/newSounds/openHat.wav"></audio>
+    <audio class="midTom-sound" src="./sounds/newSounds/midTom.wav"></audio>
+    <audio class="percussion-sound" src="./sounds/newSounds/percussion.wav"></audio>
+    <audio class="hey-sound" src="./sounds/newSounds/pop.wav"></audio>
+    <audio class="stabs-sound" src="./sounds/newSounds/stabs.wav"></audio>
+
+    <script src="/app.js"></script> 
+</body>
+</html>
